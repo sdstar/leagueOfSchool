@@ -1,0 +1,149 @@
+/* Whole Page Style */
+@font-face {
+  font-family: MjFaraz;
+  src: url(Mj_Faraz_0.ttf);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background-color: bisque;
+}
+
+body {
+  font-family: MjFaraz;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Header Style */
+header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header div .league-title {
+  text-align: center;
+  font-size: 22px;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav h2 {
+  text-indent: -10000px;
+  height: 0;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin: 10px 20px;
+  flex: 1;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Homepage Content Style */
+table {
+  margin: 0 auto;
+  width: 100%;
+}
+
+table tr {
+  display: flex;
+}
+
+table tr th {
+  display: flex;
+  height: 50px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+table tr th.rate-th {
+  flex-grow: 1;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+table tr th.name-th {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table tr th.points {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table tr td {
+  width: 100%;
+  height: auto;
+  margin: 5px 10px;
+  text-align: center;
+  height: 50px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 5px #70707033;
+}
+
+table tr td.rate-td {
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0;
+  margin-left: 20px;
+  padding: 0 20px;
+}
+
+table tr td.name-td {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+table tr td.name-td p {
+  background-color: white;
+}
+
+table tr td.name-td span {
+  background-color: transparent;
+  margin: 0 10px;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  pointer-events: none;
+}
+
+
+
+
